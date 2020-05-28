@@ -52,7 +52,10 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnAND = new System.Windows.Forms.Button();
+            this.btnXOR = new System.Windows.Forms.Button();
+            this.btnOR = new System.Windows.Forms.Button();
             this.btnOpenPB2 = new System.Windows.Forms.Button();
             this.btnOpenPB1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -60,9 +63,6 @@
             this.pic1 = new System.Windows.Forms.PictureBox();
             this.pic2 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnOR = new System.Windows.Forms.Button();
-            this.btnXOR = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.picOriginal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picResult)).BeginInit();
             this.gbxHistogram.SuspendLayout();
@@ -70,9 +70,9 @@
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic2)).BeginInit();
-            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // picOriginal
@@ -327,6 +327,18 @@
             this.tabPage2.Text = "Thao tác trên 2 ảnh";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.btnAND);
+            this.groupBox1.Controls.Add(this.btnXOR);
+            this.groupBox1.Controls.Add(this.btnOR);
+            this.groupBox1.Location = new System.Drawing.Point(533, 280);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(100, 136);
+            this.groupBox1.TabIndex = 14;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Xử lý";
+            // 
             // btnAND
             // 
             this.btnAND.Location = new System.Drawing.Point(11, 19);
@@ -336,6 +348,26 @@
             this.btnAND.Text = "AND";
             this.btnAND.UseVisualStyleBackColor = true;
             this.btnAND.Click += new System.EventHandler(this.btnAND_Click);
+            // 
+            // btnXOR
+            // 
+            this.btnXOR.Location = new System.Drawing.Point(11, 98);
+            this.btnXOR.Name = "btnXOR";
+            this.btnXOR.Size = new System.Drawing.Size(75, 23);
+            this.btnXOR.TabIndex = 13;
+            this.btnXOR.Text = "XOR";
+            this.btnXOR.UseVisualStyleBackColor = true;
+            this.btnXOR.Click += new System.EventHandler(this.btnXOR_Click);
+            // 
+            // btnOR
+            // 
+            this.btnOR.Location = new System.Drawing.Point(11, 59);
+            this.btnOR.Name = "btnOR";
+            this.btnOR.Size = new System.Drawing.Size(75, 23);
+            this.btnOR.TabIndex = 12;
+            this.btnOR.Text = "OR";
+            this.btnOR.UseVisualStyleBackColor = true;
+            this.btnOR.Click += new System.EventHandler(this.btnOR_Click);
             // 
             // btnOpenPB2
             // 
@@ -407,38 +439,6 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "Ảnh 2";
             // 
-            // btnOR
-            // 
-            this.btnOR.Location = new System.Drawing.Point(11, 59);
-            this.btnOR.Name = "btnOR";
-            this.btnOR.Size = new System.Drawing.Size(75, 23);
-            this.btnOR.TabIndex = 12;
-            this.btnOR.Text = "OR";
-            this.btnOR.UseVisualStyleBackColor = true;
-            this.btnOR.Click += new System.EventHandler(this.btnOR_Click);
-            // 
-            // btnXOR
-            // 
-            this.btnXOR.Location = new System.Drawing.Point(11, 98);
-            this.btnXOR.Name = "btnXOR";
-            this.btnXOR.Size = new System.Drawing.Size(75, 23);
-            this.btnXOR.TabIndex = 13;
-            this.btnXOR.Text = "XOR";
-            this.btnXOR.UseVisualStyleBackColor = true;
-            this.btnXOR.Click += new System.EventHandler(this.btnXOR_Click);
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.btnAND);
-            this.groupBox1.Controls.Add(this.btnXOR);
-            this.groupBox1.Controls.Add(this.btnOR);
-            this.groupBox1.Location = new System.Drawing.Point(533, 280);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(100, 136);
-            this.groupBox1.TabIndex = 14;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Xử lý";
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -461,9 +461,9 @@
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pic1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic2)).EndInit();
-            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

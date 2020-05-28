@@ -29,39 +29,39 @@
         private void InitializeComponent()
         {
             this.picResultOf2Image = new System.Windows.Forms.PictureBox();
-            this.lblResult = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picResultOf2Image)).BeginInit();
             this.SuspendLayout();
             // 
             // picResultOf2Image
             // 
-            this.picResultOf2Image.Location = new System.Drawing.Point(12, 25);
+            this.picResultOf2Image.Location = new System.Drawing.Point(12, 37);
             this.picResultOf2Image.Name = "picResultOf2Image";
             this.picResultOf2Image.Size = new System.Drawing.Size(500, 500);
             this.picResultOf2Image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picResultOf2Image.TabIndex = 0;
             this.picResultOf2Image.TabStop = false;
             // 
-            // lblResult
+            // label20
             // 
-            this.lblResult.AutoSize = true;
-            this.lblResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResult.Location = new System.Drawing.Point(9, 9);
-            this.lblResult.Name = "lblResult";
-            this.lblResult.Size = new System.Drawing.Size(76, 13);
-            this.lblResult.TabIndex = 1;
-            this.lblResult.Text = "Ảnh kết quả";
-            this.lblResult.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.DimGray;
+            this.label20.Location = new System.Drawing.Point(7, 9);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(136, 25);
+            this.label20.TabIndex = 40;
+            this.label20.Text = "ẢNH KẾT QUẢ";
             // 
             // ResultOf2ImageForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(524, 536);
-            this.Controls.Add(this.lblResult);
+            this.ClientSize = new System.Drawing.Size(524, 551);
+            this.Controls.Add(this.label20);
             this.Controls.Add(this.picResultOf2Image);
             this.Name = "ResultOf2ImageForm";
-            this.Text = "ResultOf2ImageForm";
+            this.Text = "ẢNH KẾT QUẢ";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ResultOf2ImageForm_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.picResultOf2Image)).EndInit();
             this.ResumeLayout(false);
@@ -72,6 +72,6 @@
         #endregion
 
         private System.Windows.Forms.PictureBox picResultOf2Image;
-        private System.Windows.Forms.Label lblResult;
+        private System.Windows.Forms.Label label20;
     }
 }

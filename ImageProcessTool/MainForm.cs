@@ -15,14 +15,13 @@ namespace ImageProcessTool
     {
         HistographicForm histographicForm = new HistographicForm();
         ResultOf2ImageForm resultOf2ImageForm = new ResultOf2ImageForm();
+        ImageProcess imageProcess = new ImageProcess();
 
-        ImageProcess imageProcess;
         string fileName;
 
         public MainForm()
         {
             InitializeComponent();
-            imageProcess = new ImageProcess();
             histographicForm.Hide();
         }
 
