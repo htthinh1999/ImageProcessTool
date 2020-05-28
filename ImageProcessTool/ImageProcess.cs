@@ -295,10 +295,10 @@ namespace ImageProcessTool
                 for(int x=0; x<bitmap.Width; x++)
                 {
                     byte r, g, b;
-                    int y1 = Math.Min(y, bm1.Height);
-                    int x1 = Math.Min(x, bm1.Width);
-                    int y2 = Math.Min(y, bm2.Height);
-                    int x2 = Math.Min(x, bm2.Width);
+                    int y1 = Math.Min(y, bm1.Height - 1);
+                    int x1 = Math.Min(x, bm1.Width - 1);
+                    int y2 = Math.Min(y, bm2.Height - 1);
+                    int x2 = Math.Min(x, bm2.Width - 1);
 
                     r = Convert.ToByte(bm1.GetPixel(x1, y1).R & bm2.GetPixel(x2, y2).R);
                     g = Convert.ToByte(bm1.GetPixel(x1, y1).G & bm2.GetPixel(x2, y2).G);
@@ -318,10 +318,10 @@ namespace ImageProcessTool
                 for (int x = 0; x < bitmap.Width; x++)
                 {
                     byte r, g, b;
-                    int y1 = Math.Min(y, bm1.Height);
-                    int x1 = Math.Min(x, bm1.Width);
-                    int y2 = Math.Min(y, bm2.Height);
-                    int x2 = Math.Min(x, bm2.Width);
+                    int y1 = Math.Min(y, bm1.Height - 1);
+                    int x1 = Math.Min(x, bm1.Width - 1);
+                    int y2 = Math.Min(y, bm2.Height- 1);
+                    int x2 = Math.Min(x, bm2.Width - 1);
 
                     r = Convert.ToByte(bm1.GetPixel(x1, y1).R | bm2.GetPixel(x2, y2).R);
                     g = Convert.ToByte(bm1.GetPixel(x1, y1).G | bm2.GetPixel(x2, y2).G);
@@ -341,11 +341,11 @@ namespace ImageProcessTool
                 for (int x = 0; x < bitmap.Width; x++)
                 {
                     byte r, g, b;
-                    int y1 = Math.Min(y, bm1.Height);
-                    int x1 = Math.Min(x, bm1.Width);
-                    int y2 = Math.Min(y, bm2.Height);
-                    int x2 = Math.Min(x, bm2.Width);
-
+                    int y1 = Math.Min(y, bm1.Height - 1);
+                    int x1 = Math.Min(x, bm1.Width - 1);
+                    int y2 = Math.Min(y, bm2.Height- 1);
+                    int x2 = Math.Min(x, bm2.Width - 1);
+                    
                     r = Convert.ToByte(bm1.GetPixel(x1, y1).R ^ bm2.GetPixel(x2, y2).R);
                     g = Convert.ToByte(bm1.GetPixel(x1, y1).G ^ bm2.GetPixel(x2, y2).G);
                     b = Convert.ToByte(bm1.GetPixel(x1, y1).B ^ bm2.GetPixel(x2, y2).B);
