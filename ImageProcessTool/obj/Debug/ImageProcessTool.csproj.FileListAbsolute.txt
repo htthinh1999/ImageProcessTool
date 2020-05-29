@@ -73,3 +73,7 @@ D:\LAP_TRINH\C#\ImageProcessTool\ImageProcessTool\bin\Debug\Bunifu_UI_v1.5.3.xml
 D:\LAP_TRINH\C#\ImageProcessTool\ImageProcessTool\obj\Debug\ImageProcessTool.exe.config
 D:\LAP_TRINH\C#\ImageProcessTool\ImageProcessTool\obj\Debug\ImageProcessTool.csproj.CopyComplete
 D:\LAP_TRINH\C#\ImageProcessTool\ImageProcessTool\obj\Debug\ImageProcessTool.frmMain.resources
+D:\LAP_TRINH\C#\ImageProcessTool\ImageProcessTool\bin\Debug\ImageProcessTool.exe.manifest
+D:\LAP_TRINH\C#\ImageProcessTool\ImageProcessTool\bin\Debug\ImageProcessTool.application
+D:\LAP_TRINH\C#\ImageProcessTool\ImageProcessTool\obj\Debug\ImageProcessTool.exe.manifest
+D:\LAP_TRINH\C#\ImageProcessTool\ImageProcessTool\obj\Debug\ImageProcessTool.application
