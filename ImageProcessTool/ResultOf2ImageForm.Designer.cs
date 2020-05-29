@@ -28,19 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ResultOf2ImageForm));
             this.picResultOf2Image = new System.Windows.Forms.PictureBox();
             this.label20 = new System.Windows.Forms.Label();
+            this.btnCLose = new Bunifu.Framework.UI.BunifuImageButton();
             ((System.ComponentModel.ISupportInitialize)(this.picResultOf2Image)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCLose)).BeginInit();
             this.SuspendLayout();
             // 
             // picResultOf2Image
             // 
+            this.picResultOf2Image.Cursor = System.Windows.Forms.Cursors.Hand;
             this.picResultOf2Image.Location = new System.Drawing.Point(12, 37);
             this.picResultOf2Image.Name = "picResultOf2Image";
-            this.picResultOf2Image.Size = new System.Drawing.Size(500, 500);
+            this.picResultOf2Image.Size = new System.Drawing.Size(400, 400);
             this.picResultOf2Image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picResultOf2Image.TabIndex = 0;
             this.picResultOf2Image.TabStop = false;
+            this.picResultOf2Image.Click += new System.EventHandler(this.picResultOf2Image_Click);
             // 
             // label20
             // 
@@ -53,17 +58,34 @@
             this.label20.TabIndex = 40;
             this.label20.Text = "ẢNH KẾT QUẢ";
             // 
+            // btnCLose
+            // 
+            this.btnCLose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCLose.Image = ((System.Drawing.Image)(resources.GetObject("btnCLose.Image")));
+            this.btnCLose.ImageActive = null;
+            this.btnCLose.Location = new System.Drawing.Point(390, 4);
+            this.btnCLose.Name = "btnCLose";
+            this.btnCLose.Size = new System.Drawing.Size(30, 30);
+            this.btnCLose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnCLose.TabIndex = 41;
+            this.btnCLose.TabStop = false;
+            this.btnCLose.Zoom = 10;
+            this.btnCLose.Click += new System.EventHandler(this.btnCLose_Click);
+            // 
             // ResultOf2ImageForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(524, 551);
+            this.ClientSize = new System.Drawing.Size(424, 440);
+            this.Controls.Add(this.btnCLose);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.picResultOf2Image);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ResultOf2ImageForm";
             this.Text = "ẢNH KẾT QUẢ";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ResultOf2ImageForm_FormClosing);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ResultOf2ImageForm_MouseDown);
             ((System.ComponentModel.ISupportInitialize)(this.picResultOf2Image)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCLose)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -73,5 +95,6 @@
 
         private System.Windows.Forms.PictureBox picResultOf2Image;
         private System.Windows.Forms.Label label20;
+        private Bunifu.Framework.UI.BunifuImageButton btnCLose;
     }
 }

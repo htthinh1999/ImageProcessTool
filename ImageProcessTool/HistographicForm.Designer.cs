@@ -28,19 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ptxHistographic = new System.Windows.Forms.PictureBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HistographicForm));
+            this.picHistographic = new System.Windows.Forms.PictureBox();
             this.label20 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.ptxHistographic)).BeginInit();
+            this.btnCLose = new Bunifu.Framework.UI.BunifuImageButton();
+            ((System.ComponentModel.ISupportInitialize)(this.picHistographic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCLose)).BeginInit();
             this.SuspendLayout();
             // 
-            // ptxHistographic
+            // picHistographic
             // 
-            this.ptxHistographic.Location = new System.Drawing.Point(12, 37);
-            this.ptxHistographic.Name = "ptxHistographic";
-            this.ptxHistographic.Size = new System.Drawing.Size(450, 200);
-            this.ptxHistographic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ptxHistographic.TabIndex = 0;
-            this.ptxHistographic.TabStop = false;
+            this.picHistographic.Cursor = System.Windows.Forms.Cursors.Default;
+            this.picHistographic.Location = new System.Drawing.Point(12, 37);
+            this.picHistographic.Name = "picHistographic";
+            this.picHistographic.Size = new System.Drawing.Size(450, 200);
+            this.picHistographic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picHistographic.TabIndex = 0;
+            this.picHistographic.TabStop = false;
             // 
             // label20
             // 
@@ -53,17 +57,34 @@
             this.label20.TabIndex = 40;
             this.label20.Text = "LƯỢC ĐỒ XÁM";
             // 
+            // btnCLose
+            // 
+            this.btnCLose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCLose.Image = ((System.Drawing.Image)(resources.GetObject("btnCLose.Image")));
+            this.btnCLose.ImageActive = null;
+            this.btnCLose.Location = new System.Drawing.Point(440, 4);
+            this.btnCLose.Name = "btnCLose";
+            this.btnCLose.Size = new System.Drawing.Size(30, 30);
+            this.btnCLose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnCLose.TabIndex = 42;
+            this.btnCLose.TabStop = false;
+            this.btnCLose.Zoom = 10;
+            this.btnCLose.Click += new System.EventHandler(this.btnCLose_Click);
+            // 
             // HistographicForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(474, 251);
+            this.ClientSize = new System.Drawing.Size(474, 240);
+            this.Controls.Add(this.btnCLose);
             this.Controls.Add(this.label20);
-            this.Controls.Add(this.ptxHistographic);
+            this.Controls.Add(this.picHistographic);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "HistographicForm";
             this.Text = "LƯỢC ĐỒ XÁM";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.HistographicForm_FormClosing);
-            ((System.ComponentModel.ISupportInitialize)(this.ptxHistographic)).EndInit();
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.HistographicForm_MouseDown);
+            ((System.ComponentModel.ISupportInitialize)(this.picHistographic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnCLose)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -71,7 +92,8 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox ptxHistographic;
+        private System.Windows.Forms.PictureBox picHistographic;
         private System.Windows.Forms.Label label20;
+        private Bunifu.Framework.UI.BunifuImageButton btnCLose;
     }
 }

@@ -2,7 +2,6 @@ D:\LAP_TRINH\C#\ImageProcessTool\ImageProcessTool\bin\Debug\ImageProcessTool.exe
 D:\LAP_TRINH\C#\ImageProcessTool\ImageProcessTool\bin\Debug\ImageProcessTool.exe
 D:\LAP_TRINH\C#\ImageProcessTool\ImageProcessTool\bin\Debug\ImageProcessTool.pdb
 D:\LAP_TRINH\C#\ImageProcessTool\ImageProcessTool\obj\Debug\ImageProcessTool.csprojAssemblyReference.cache
-D:\LAP_TRINH\C#\ImageProcessTool\ImageProcessTool\obj\Debug\ImageProcessTool.MainForm.resources
 D:\LAP_TRINH\C#\ImageProcessTool\ImageProcessTool\obj\Debug\ImageProcessTool.Properties.Resources.resources
 D:\LAP_TRINH\C#\ImageProcessTool\ImageProcessTool\obj\Debug\ImageProcessTool.csproj.GenerateResource.cache
 D:\LAP_TRINH\C#\ImageProcessTool\ImageProcessTool\obj\Debug\ImageProcessTool.csproj.CoreCompileInputs.cache
